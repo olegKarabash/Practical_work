@@ -1,3 +1,2 @@
 # Practical_work
-
-ghjgffhjhj
+проверка

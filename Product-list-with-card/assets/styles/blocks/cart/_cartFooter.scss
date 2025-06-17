@@ -1,0 +1,47 @@
+.cart__footer {
+    display: flex;
+    font-size: 14px;
+    flex-direction: column;
+    row-gap: 20px;
+  
+    &-totalPrice {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 30px;
+  
+      &-text {
+        opacity: 0.8;
+      }
+  
+      &-value {
+        font-size: 26px;
+        font-weight: 700;
+      }
+    }
+  
+    &-ecology {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: center;
+      padding-inline: 30px;
+      padding-block: 15px;
+      border-radius: 12px;
+      background-color: var(--color-bg);
+      column-gap: 10px;
+    }
+  
+    &-confirmOrder {
+      display: flex;
+      width: 100%;
+      background-color: var(--color-accent-light);
+      color: white;
+      padding-inline: 60px;
+      padding-block: 10px;
+  
+      @include hover {
+        background-color: hsl(11, 99%, 64%);
+      }
+    }
+  }

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./assets/styles/main/styles.css" />
+    <title>Product list with cart</title>
+  </head>
+  <body>
+    <main class="content">
+      <section class="desserts container">
+        <div class="cart">
+          <div class="cart__title">Your Cart (0)</div>
+          <ul class="cart__list">
+            <li class="cart__list-item-empty" style="font-size: 14px">
+              <img
+                class="cart__list-item-image-empty"
+                src="./assets/images/illustration-empty-cart.svg"
+                alt="image of empty cart"
+                width="130"
+                height="130"
+              />
+              <div class="cart__list-item-empty">
+                Your added items will appear here.
+              </div>
+            </li>
+          </ul>
+        </div>
+        <h1 class="desserts__title">Desserts</h1>
+        <ul class="dessert__list"></ul>
+      </section>
+    </main>
+    <div class="confirm-order modal" id="confirmOrder">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="modal-title-wrapper">
+            <div class="modal-title"><b>Order Confirmed</b></div>
+            <img
+              src="./assets/images/icon-order-confirmed.svg"
+              alt="icon order confirmed"
+              class="icon-order-confirmed"
+            />
+          </div>
+          <div class="modal-additional-text">
+            We hope you enjoy your food!
+          </div>
+        </div>
+        <div class="modal-body">
+          <ul class="modal-list"></ul>
+        </div>
+        <div class="modal-footer">
+          <button
+            type="button"
+            class="modal-button-start-new-order button"
+          >
+            Start New Order
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/scripts/main.js" type="module"></script>
+  </body>
+</html>

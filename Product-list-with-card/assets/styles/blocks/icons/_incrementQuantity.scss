@@ -1,0 +1,15 @@
+.increment-quantity {
+    border: 2px solid var(--color-light);
+    border-radius: 50%;
+    padding: 3px;
+    aspect-ratio: 1;
+    transition-duration: 0.2s;
+  
+    @include hover() {
+      transform: scale(1.2);
+    }
+  
+    @include mobile() {
+      width: 24px;
+    }
+  }

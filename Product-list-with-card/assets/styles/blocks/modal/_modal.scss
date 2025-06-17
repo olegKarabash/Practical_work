@@ -1,0 +1,46 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  
+    width: 100%;
+    height: 100%;
+  
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 35%;
+    width: 520px;
+    max-height: 80%;
+    overflow-y: auto;
+    background-color: white;
+    padding: 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    animation: animate 0.3s;
+  
+    @include desktop() {
+      width: fluid-common(300, 520, 1280);
+    }
+  
+    @include mobile-medium() {
+      width: 90%;
+    }
+  }
+  
+  @keyframes animate {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

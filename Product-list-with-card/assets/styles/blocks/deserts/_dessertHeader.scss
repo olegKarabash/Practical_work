@@ -1,0 +1,10 @@
+.desserts {
+    margin-top: 100px;
+    &__title {
+      margin-bottom: 20px;
+      display: inline-block;
+      font-weight: 700;
+      font-size: 40px;
+      color: var(--color-dark);
+    }
+  }

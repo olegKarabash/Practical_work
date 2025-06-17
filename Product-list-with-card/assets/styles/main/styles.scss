@@ -1,0 +1,19 @@
+@import "../global/fonts",
+        "../global/normalize",
+        "../global/mixins",
+        "../global/media",
+        "../global/globals",
+        "../global/variables",
+        "../global/utils",
+        "../global/functions";
+
+@import "../blocks/buttons/button",
+        "../blocks/icons/incrementQuantity",
+        "../blocks/icons/decrementQuantity",
+        "../blocks/deserts/dessertHeader",
+        "../blocks/cart/cart",
+        "../blocks/cart/cartItem",
+        "../blocks/cart/cartFooter",
+        "../blocks/deserts/dessertList",
+        "../blocks/modal/modal",
+        "../blocks/modal/modalContent";

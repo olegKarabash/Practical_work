@@ -1,0 +1,76 @@
+.dessert__list {
+    display: grid;
+    grid-template-columns: repeat(3, fluid-common(150, 300, 1600));
+    width: fit-content;
+    gap: 30px;
+  
+    &-item {
+      &-wrapper {
+        position: relative;
+      }
+  
+      &-image {
+        border-radius: var(--border-radius);
+      }
+  
+      &-info {
+        display: flex;
+        flex-direction: column;
+        margin-top: 35px;
+        row-gap: 3px;
+      }
+  
+      &-category {
+        color: var(--color-accent_2);
+        font-weight: 400;
+        font-size: 14px;
+      }
+  
+      &-name {
+        font-weight: 600;
+      }
+  
+      &-price {
+        font-weight: 600;
+        color: var(--color-accent-light);
+      }
+  
+      &-buy {
+        position: absolute;
+        left: 50%;
+        bottom: -7%;
+        translate: -50%;
+        z-index: 1;
+  
+        @include tablet() {
+          width: 70%;
+          height: 25%;
+          font-size: 14px;
+        }
+  
+        @include mobile-s() {
+          height: 48px;
+        }
+      }
+    }
+  
+    @include desktop() {
+      grid-template-columns: repeat(2, fluid-common(170, 350, 1280));
+    }
+  
+    @include tablet() {
+      grid-template-columns: repeat(2, fluid-common(100, 250, 1142));
+    }
+  
+    @include mobile() {
+      grid-template-columns: repeat(1, fluid-common(150, 250, 768));
+    }
+  
+    @include mobile-medium() {
+      grid-template-columns: repeat(2, fluid-common(150, 250, 640));
+    }
+  
+    @include mobile-s() {
+      grid-template-columns: repeat(1, fluid-common(100, 340, 500));
+    }
+  }

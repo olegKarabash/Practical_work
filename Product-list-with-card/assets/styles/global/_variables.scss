@@ -1,0 +1,22 @@
+:root {
+    --color-gray: #898989;
+    --color-dark: hsl(14, 65%, 9%);
+    --color-light: #ffffff;
+    --color-accent: hsl(12, 20%, 44%);
+    --color-accent_2: hsl(7, 20%, 60%);
+    --color-accent-light: hsl(11, 73%, 47%);
+    --color-bg: hsl(20, 50%, 98%);
+  
+    --border-radius: 14px;
+  
+    --font-family-base: "Red Hat Text", sans-serif;
+  
+    --container-width: 1440px;
+    --container-padding-x: 50px;
+  
+    --button-height: 45px;
+    --button-padding-x: 15px;
+    --button-font-size: 16px;
+  
+    --transition-duration: 0.2s;
+  }
